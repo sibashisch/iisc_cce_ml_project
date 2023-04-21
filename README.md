@@ -7,7 +7,7 @@
 
 ## Data Collection
 
-* Using Google image search to download Covid 19 affected Lungs' X-Ray images, refer: [image_scrapping.ipnyb](./image_scrapping.ipnyb)
+* Using Google image search to download Covid 19 affected Lungs' X-Ray images, refer: [image_scrapping.ipnyb](./image_scrapping.ipynb)
 * Using Google Custom Search API for the scrapping. API Keys and other secrets are stored in a file ***secrets.py*** (Not pushed to remote repository for security reasons)
 * The Scrapping worked till 200 images but then started returning **400 Bad Request** errors; probably I reached the free use limit.
 * So had to search for alternative data sources, found some data published by some universities:
