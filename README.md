@@ -31,7 +31,8 @@ pip3 install pandas
 ## pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.14.0-py3-none-any.whl
 
 ## Hence running tensorflow on docker using colima
-colima start --memory 8 --arch x86_64 
+colima start --memory 16 --arch x86_64 
 docker pull tensorflow/tensorflow:latest
-docker run -it -p 8888:8888 tensorflow/tensorflow:latest-jupyter  # Start Jupyter server 
+## Start Jupyter server with my work directory mounted
+docker run -v /Users/sichatte/Downloads/iisc_cce_ml_project:/tf/iisc_cce_ml_project -it -p 8888:8888 tensorflow/tensorflow:latest-jupyter
 ```
